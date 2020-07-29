@@ -7,7 +7,7 @@ from .templates import CMD
 
 class TempPrompt:
     def __init__(self, parent, enter_cmd, regex,
-                 exit_cmd, *, timeout=-1, quiet=False):
+                 exit_cmd, *, timeout=-1, quiet=True):
         self.parent = parent
         self.enter_cmd = enter_cmd
         self.regex = regex
