@@ -9,7 +9,7 @@ class TermArgs(NamedTuple):
     EXIT_COMMAND: str = 'exit'
 
 
-CMD_PROMPT = re.compile(r'^[A-Z]\:.+>')
+CMD_PROMPT = re.compile(r'[A-Z]\:.+>')
 CMD = TermArgs('cmd', CMD_PROMPT)
 
 PYTHON_PROMPT = re.compile(r'^>>> ')
